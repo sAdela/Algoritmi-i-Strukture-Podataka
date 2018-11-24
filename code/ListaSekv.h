@@ -16,7 +16,7 @@ class ListaSekvencijalna {
 	}
   
 public:
-	ListaPovezana(int Max=10) :brojac(0), max(Max) {
+	ListaSekvencijalna(int Max=10) :brojac(0), max(Max) {
 		N = new Tip[max];
 	}
   
