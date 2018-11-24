@@ -1,7 +1,7 @@
 #pragma once 
 
 template<class Tip>
-class ListaPovezana {
+class ListaSekvencijalna {
 	Tip* N;
 	int brojac; 
 	int max;
