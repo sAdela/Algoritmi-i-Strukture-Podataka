@@ -1,7 +1,7 @@
 #pragma once
 
 template<class T>
-class StekSekv {
+class StekSekvencijalni {
 	int brojac;
 	int max; 
 	T* N;
