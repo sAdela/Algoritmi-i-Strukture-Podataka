@@ -1,7 +1,7 @@
 #pragma once 
-
+#include "Lista.h"
 template<class Tip>
-class ListaSekvencijalna {
+class ListaSekvencijalna : public Lista<Tip> {
 	Tip* N;
 	int brojac; 
 	int max;
@@ -16,7 +16,7 @@ class ListaSekvencijalna {
 	}
   
 public:
-	ListaSekvencijalna(int Max=10) :brojac(0), max(Max) {
+	ListaSekvencijalna(int Max = 10) :brojac(0), max(Max) {
 		N = new Tip[max];
 	}
   
