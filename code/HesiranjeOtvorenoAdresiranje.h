@@ -8,7 +8,7 @@ class HesiranjeOtvorenoAdresiranje :public Hesiranje<Tip>
 {
 	Tip* Niz;
 	bool* Zauzeto;
-  int max_size;
+ 	int max_size;
 	int IzracunajHash(Tip k)
 	{
 		return k % max_size;
