@@ -1,7 +1,8 @@
 #pragma once
 #include"Cvor.h"
+#include"Lista.h"
 template<class Tip>
-class ListaPovezana {
+class ListaPovezana: public Lista<Tip> {
 	Cvor<Tip>* prvi;
 
 public:
