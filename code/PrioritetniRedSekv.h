@@ -1,7 +1,7 @@
 #pragma once
-
+#include"PrioritetniRed.h"
 template<class T>
-class PrioritetniRedSekvencijalni {
+class PrioritetniRedSekvencijalni: public PrioritetniRed<T> {
 	T* N;
 	int brojac; 
 	int max;
