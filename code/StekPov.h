@@ -1,7 +1,8 @@
 #pragma once
 #include"Cvor.h"
+#include"Stek.h"
 template<class T>
-class StekPovezani {
+class StekPovezani: public Stek<T> {
 	Cvor<T> *prvi;
 public:
 	StekPovezani() {
@@ -36,7 +37,7 @@ public:
 		return prvi->info;
 	}
 
-	void Print() {
+	void print() {
 		Cvor<T>* temp = prvi;
 		while (temp != nullptr) {
 			cout << temp->info << " ";
