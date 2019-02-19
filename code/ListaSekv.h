@@ -42,6 +42,10 @@ public:
 	bool isPun() {
 		return brojac == max;
 	}
+	
+	int count(){
+		return brojac;
+	}
   
 	void Print() {
 		for (int i = 0; i < brojac; i++)
