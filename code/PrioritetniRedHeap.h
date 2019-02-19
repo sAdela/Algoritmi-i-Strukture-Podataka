@@ -1,7 +1,7 @@
 #pragma once
-
+#include "PrioritetniRed.h"
 template<class T>
-class PrioritetniRedHeap {
+class PrioritetniRedHeap: public PrioritetniRed<T> {
 	T* N;
 	int brojac;
 	int max;
