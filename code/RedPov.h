@@ -1,8 +1,8 @@
 #pragma once
 #include"Cvor.h"
-
+#include"Red.h"
 template <class T>
-class RedPovezani {
+class RedPovezani: public Red<T> {
 	Cvor<T>* pocetak;
 	Cvor<T>* kraj;
 public:
