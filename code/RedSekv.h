@@ -1,7 +1,7 @@
 #pragma once
-
+#include"Red.h"
 template<class T>
-class RedSekvencijalni {
+class RedSekvencijalni: public Red<T>{
 	int pocetak; 
 	int kraj;
 	int brojac;
@@ -54,7 +54,7 @@ public:
 		return x;
 	}
 
-	void Print() {
+	void print() {
 		int j = pocetak;
 		for (int i = 0; i < brojac; i++) {
 			cout << N[j++] << " ";
