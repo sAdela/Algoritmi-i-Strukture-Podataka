@@ -1,7 +1,7 @@
 #pragma once
-
+#include"Stek.h"
 template<class T>
-class StekSekvencijalni {
+class StekSekvencijalni: public Stek<T> {
 	int brojac;
 	int max; 
 	T* N;
@@ -33,7 +33,7 @@ public:
 		return brojac == 0;
 	}
 
-	T Ukloni() {
+	T ukloni() {
 		if (JeLiPrazan())
 			throw exception("Ne moze se ukloniti element iz praznog steka");
 		T temp = N[--brojac];
@@ -46,7 +46,7 @@ public:
 		return N[brojac - 1];
 	}
 
-	void Print() {
+	void print() {
 		for (int i = 0; i < brojac; i++)
 			cout << N[i] << " ";
 		cout << endl;
