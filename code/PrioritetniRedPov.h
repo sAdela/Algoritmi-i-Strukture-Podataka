@@ -1,8 +1,9 @@
 #pragma once
 #include"Cvor.h"
+#include"PrioritetniRed.h"
 
 template<class T>
-class PrioritetniRedPovezani {
+class PrioritetniRedPovezani: public PrioritetniRed<T> {
 	Cvor<T>* prvi;
 public:
 	PrioritetniRedPovezani() {
