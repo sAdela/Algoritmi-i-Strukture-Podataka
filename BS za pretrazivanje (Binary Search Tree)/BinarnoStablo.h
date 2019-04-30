@@ -35,14 +35,14 @@ class BinarnoStabloZaPretrazivanje{
 			return rekurzija_Dodaj(cvor->desnoDijete, value);
 	}
 
-  void rekurzija_ReciklirajStablo(BSCvor<Kljuc>*&  cvor){
-      if (cvor != nullptr){
-        rekurzija_ReciklirajStablo(cvor->desnoDijete);
-        rekurzija_ReciklirajStablo(cvor->lijevoDijete);
-        delete cvor;
-        cvor = nullptr;
-      }
-    }
+	  void rekurzija_ReciklirajStablo(BSCvor<Kljuc>*&  cvor){
+	      if (cvor != nullptr){
+		rekurzija_ReciklirajStablo(cvor->desnoDijete);
+		rekurzija_ReciklirajStablo(cvor->lijevoDijete);
+		delete cvor;
+		cvor = nullptr;
+	      }
+	    }
 public:
 
   BSCvor<Kljuc>*	korijen;
