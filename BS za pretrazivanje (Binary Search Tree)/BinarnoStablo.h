@@ -27,10 +27,8 @@ class BinarnoStabloZaPretrazivanje{
 		}
 		if (IsJednako(cvor->value,  value))
 			return false;
-
 		if (IsVece(cvor->value, value))
 			return rekurzija_Dodaj(cvor->lijevoDijete, value);
-		
 		else
 			return rekurzija_Dodaj(cvor->desnoDijete, value);
 	}
@@ -45,7 +43,7 @@ class BinarnoStabloZaPretrazivanje{
 	    }
 public:
 
-  BSCvor<Kljuc>*	korijen;
+  	BSCvor<Kljuc>* korijen;
 
 	BinarnoStabloZaPretrazivanje(){
 		korijen = nullptr;
@@ -67,6 +65,6 @@ public:
 	}
 
 	bool sadrzi(Kljuc value){
-    return trazi(value) != nullptr;
+    		return trazi(value) != nullptr;
 	}
 };
